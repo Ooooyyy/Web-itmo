@@ -1,0 +1,28 @@
+.container {
+    width: 900px;
+    margin: auto;
+    background: blue;
+}
+
+.box {
+    width: 440px;
+    height: 440px;
+    float: left;
+    margin: 0 20px 20px 0;
+    background: grey;
+}
+
+.box:nth-child(2) {
+    margin: 0;
+    background: black;
+}
+
+.box:nth-child(3) {
+    margin-bottom: 0;
+    background: red;
+}
+
+.box:nth-child(4) {
+    margin: 0;
+    background: yellow;
+}
