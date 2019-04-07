@@ -32,8 +32,13 @@ $(document).ready(function() {
             ctx.fillStyle = "white";
             var url = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru';
             $.get(url, function(data) {
-                console.log(data.quoteText);
                 printQuote(data.quoteText, ctx)
+                var dataURL = canvas.toDataURL("image/jpeg");
+                var link = document.createElement("a");
+                link.href = dataURL;
+                link.download = "quote.jpg";
+                link.innerHTML = "Скачать цитату";
+                body.appendChild(link);
             });
         }
     }
