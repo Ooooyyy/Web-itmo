@@ -5,6 +5,9 @@
     <title>lab4</title>
 </head>
 <body>
+<ul>
+    <li><a class="menu" href="admin.php">Admin</a></li>
+</ul>
 
 <?php
 
@@ -38,3 +41,4 @@ mysqli_close($conn);
 
 </body>
 </html>
+
